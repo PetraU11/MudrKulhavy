@@ -12,8 +12,8 @@ body {
 }
 
 section {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px auto;
+  max-width: 1400px;
 }
 
 h2 {
@@ -179,13 +179,26 @@ h2::after {
 .open {
   background-image: url("../images/lekarske-nastroje.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: -250px;
+}
+@media screen and (min-width: 1000px) {
+  .open {
+    background-position: center;
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 15%;
+  }
 }
 
 .open__wrapper {
   text-align: right;
   padding: 10px;
+  max-width: 1400px;
+}
+@media screen and (min-width: 1000px) {
+  .open__wrapper {
+    grid-column: 3/4;
+  }
 }
 
 .footer {
