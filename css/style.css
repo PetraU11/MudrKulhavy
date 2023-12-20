@@ -7,8 +7,9 @@ body {
   background-color: #ECE8EF;
   text-align: center;
   color: #1C0221;
-  font-family: Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 15px;
+  font-size: 1.2rem;
 }
 
 section {
@@ -18,6 +19,9 @@ section {
 
 h2 {
   font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 h2::after {
@@ -127,11 +131,11 @@ h2::after {
 
 .header__img {
   margin-top: -80px;
-  margin-left: -60px;
+  margin-left: -80px;
 }
 @media screen and (min-width: 400px) {
   .header__img {
-    margin-left: -30px;
+    margin-left: -50px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -180,7 +184,12 @@ h2::after {
   background-image: url("../images/lekarske-nastroje.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -250px;
+  background-position: -370px;
+}
+@media screen and (min-width: 500px) {
+  .open {
+    background-position: center;
+  }
 }
 @media screen and (min-width: 1000px) {
   .open {
@@ -201,6 +210,23 @@ h2::after {
   }
 }
 
-.contact__img {
+.contact__icon {
+  width: 40px;
+  color: #53B3CB;
+}
+
+.footer {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__img {
   width: 100%;
+}
+
+.footer_text {
+  margin-top: 0px;
+  background-color: #c1e1e2;
+  padding: 8px;
 }/*# sourceMappingURL=style.css.map */
