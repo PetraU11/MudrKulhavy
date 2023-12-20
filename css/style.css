@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -8,6 +9,19 @@ body {
   color: #1C0221;
   font-family: Georgia, serif;
   padding: 15px;
+}
+
+section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h2::after {
+  content: "• • • • • •";
+  color: #53B3CB;
+  text-shadow: #53B3CB 0 0 5px;
+  margin: 0 20px;
+  display: block;
 }
 
 .header {
@@ -156,6 +170,13 @@ body {
     height: 15%;
     max-width: 500px;
   }
+}
+
+.open {
+  background-image: url("./images/lekarske-nastroje.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .footer {
