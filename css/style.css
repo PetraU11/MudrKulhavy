@@ -32,6 +32,11 @@ h2::after {
   display: block;
 }
 
+hr {
+  width: 30%;
+  border-color: #53B3CB;
+}
+
 .header {
   max-width: 1400px;
   margin-left: auto;
