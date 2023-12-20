@@ -201,7 +201,10 @@ h2::after {
   }
 }
 
+.contact__img {
+  width: 100%;
+}
+
 .footer {
-  background-color: #53B3CB;
   padding: 30px;
 }/*# sourceMappingURL=style.css.map */
