@@ -30,6 +30,10 @@ section {
     margin-bottom: 40px;
 }
 
+h2{
+    font-family: 'Bebas Neue', sans-serif; 
+}
+
 h2::after{
     content: "• • • • • •";
     color: $base-color;
@@ -211,18 +215,22 @@ max-width:500px;
 //ORDINAČNÍ HODINY
 
 .open{
-    background-image: url("./images/lekarske-nastroje.jpg"); //object-fit pro fotky, nastavit height&weight. 
+    background-image: url("../images/lekarske-nastroje.jpg"); //object-fit pro fotky, nastavit height&weight. 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-
+.open__wrapper{
+    text-align: right;
+    padding: 10px;
+}
 
 
 
 //FOOOTER
 .footer{
+   
     background-color: $base-color;
     padding: 30px;
 }

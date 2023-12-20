@@ -16,6 +16,10 @@ section {
   margin-bottom: 40px;
 }
 
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
 h2::after {
   content: "• • • • • •";
   color: #53B3CB;
@@ -173,10 +177,15 @@ h2::after {
 }
 
 .open {
-  background-image: url("./images/lekarske-nastroje.jpg");
+  background-image: url("../images/lekarske-nastroje.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.open__wrapper {
+  text-align: right;
+  padding: 10px;
 }
 
 .footer {
