@@ -47,10 +47,8 @@ h2::after{
     display:block;
 }
 
-hr {
-    width: 30%;
-  border-color: $base-color;  
-}
+
+
 
 //HEADER
 
@@ -61,16 +59,17 @@ hr {
 }
 
 .header__wrapper-top{
-    margin-bottom: 5%;
-    display:flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
     position:relative;
+    text-align: right;
+    margin-bottom: -70px;
+    width:90%;
 
     @include tablet{
         margin-bottom:0px;
+        display:flex;
+    flex-direction: row-reverse;
         justify-content: flex-start;
+        align-items: center;
     }
 
     @include tablet {
@@ -83,7 +82,7 @@ hr {
     margin-top:0;
     padding-top:16px;
     margin-bottom:0;
-    text-align:left;
+    text-align:right;
     font-family: 'Bebas Neue', sans-serif;
     //position:relative;
     //z-index: 100;
@@ -101,6 +100,7 @@ hr {
 .header__hbg-wrapper{
     display:inline-block;
     text-align: right;
+    margin-right: 20px;
     
 
     @include tablet{
@@ -136,7 +136,7 @@ hr {
 
 .header__wrapper-nav{
     background-color: $base-color;
-    height:280px;
+    height:300px;
     width: 100%;
     position: absolute;
     z-index:-1;
@@ -152,8 +152,7 @@ hr {
 }
 
 .header__img{
-   margin-top: -80px;
-   margin-left: -80px;
+ margin-left: -10px;
 
    @include tabletmini {
     margin-left: -50px;
@@ -216,7 +215,15 @@ max-width:500px;
 
 //AKTUALITY
 
+.news_content::after{
+    content: "• • • ";
+    color: $base-color-extra;
+    text-shadow: $base-color-extra 0 0 10px;
+    margin:0 20px;
+    display:block;
+    font-size: 3rem;
 
+}
 
 
 
