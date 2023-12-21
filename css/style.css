@@ -43,6 +43,8 @@ h2::after {
   text-align: right;
   margin-bottom: -70px;
   width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 500px) {
   .header__wrapper-top {
@@ -62,6 +64,7 @@ h2::after {
 }
 
 .header__h1 {
+  font-size: 3rem;
   margin-top: 0;
   padding-top: 16px;
   margin-bottom: 0;
