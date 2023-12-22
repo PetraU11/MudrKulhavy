@@ -82,7 +82,7 @@ h2::after{
     }   
 }
 .header__h1{
-    font-size: 3rem;
+    font-size: 2.9rem;
     margin-top:0;
     padding-top:16px;
     margin-bottom:0;
@@ -185,6 +185,7 @@ h2::after{
     grid-column: 2 / 3;
     gap: 24px;
     margin-left: -20px;
+    width: 90%;
 
     
 } 
@@ -212,7 +213,7 @@ h2::after{
    
 
    @include tabletmidi {
-
+width:80%;
 height: 15%;
 max-width:500px;
 
@@ -222,10 +223,11 @@ max-width:500px;
 //AKTUALITY
 
 .news{
-    margin-top: 380px;
-
+    margin-top: 380px; 
    
 }
+
+
 
 .news_content::after{
     content: "• • • ";
@@ -286,12 +288,43 @@ max-width:500px;
 }
 
 //KONTAKTY
+.contact__list-wrapper{
+    @include desktop {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+    }
+}
+
+
+
 .contact__icon {
     width: 40px;
     color:$base-color;
 
+    @include tablet{
+        margin-right: 20px;
+    }
 }
 
+.contact__type,
+.contact__type{
+
+    @include tablet { 
+    display:flex;
+    align-items: center;
+    justify-content: center;}
+
+    @include desktop{
+        justify-content: left;
+    }
+}
+.contact__map{
+    width:100%;
+    max-width: 500px;
+}
 
 //FOOOTER
 .footer{
