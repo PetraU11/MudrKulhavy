@@ -199,6 +199,7 @@ h2::after {
 
 .news {
   margin-top: 380px;
+  width: 80%;
 }
 
 .news_content::after {
@@ -208,6 +209,10 @@ h2::after {
   margin: 0 20px;
   display: block;
   font-size: 3rem;
+}
+
+.important {
+  width: 80%;
 }
 
 .important__img {
@@ -259,6 +264,8 @@ h2::after {
     align-items: center;
     gap: 20px;
     text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 }
 

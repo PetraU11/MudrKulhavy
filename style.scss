@@ -224,9 +224,9 @@ max-width:500px;
 
 .news{
     margin-top: 380px; 
+    width:80%;
    
 }
-
 
 
 .news_content::after{
@@ -241,6 +241,10 @@ max-width:500px;
 
 
 //DULEZITE
+
+.important{
+    width:80%;
+}
 
 .important__img {
     width: 100px;
@@ -295,6 +299,9 @@ max-width:500px;
         align-items: center;
         gap: 20px;
         text-align: left;
+        margin-left: 60px;
+        margin-right: 60px;
+       
     }
 }
 
