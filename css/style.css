@@ -68,7 +68,7 @@ h2::after {
   margin-top: 0;
   padding-top: 16px;
   margin-bottom: 0;
-  text-align: center;
+  text-align: right;
   font-family: "Bebas Neue", sans-serif;
 }
 @media screen and (min-width: 500px) {
