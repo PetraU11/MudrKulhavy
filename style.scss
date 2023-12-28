@@ -220,12 +220,51 @@ max-width:500px;
    }  
 }
 
+
+
+//JS HMBG Menu Shown
+
+
 //AKTUALITY
+
+.news_content-wrapper{
+    animation-name: newsAnim;
+    animation-duration: 0.9s;
+    animation-iteration-count:initial;
+}
+
+@keyframes newsAnim {
+    0% {transform: translateY(-90%);
+        opacity: 0; }
+    50% {opacity:0;}
+    100% {transform: translateY(1%);
+        opacity:1; } 
+    }
+
+.aktuality-dulezite {
+    width:80%;
+    margin-right: auto;
+    margin-left:auto;
+    text-align: center;
+    @include desktop {
+        display:flex;
+        width:90%;
+        gap: 20px;
+    
+    }
+}
 
 .news{
     margin-top: 380px; 
-    width:80%;
+    text-align:center;
+
     
+    @include desktop{
+        flex-basis: 50%;
+        border-right: $base-color solid 5px;
+        padding-right: 10px;
+        text-align:left;
+    }
    
 }
 
@@ -246,13 +285,19 @@ max-width:500px;
 //DULEZITE
 
 .important{
-    width:80%;
+    @include desktop {
+        flex-basis:50%;
+        margin-top: 380px; 
+    text-align:left;
+padding-left:10px;}
 }
 
 .important__img {
     width: 100px;
     display:none;
 }
+
+
 
 
 //ORDINAČNÍ HODINY
