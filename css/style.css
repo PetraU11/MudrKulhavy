@@ -216,6 +216,10 @@ h2::after {
   }
 }
 
+.header__nav.shown {
+  position: absolute;
+}
+
 .news_content-wrapper {
   -webkit-animation-name: newsAnim;
           animation-name: newsAnim;
