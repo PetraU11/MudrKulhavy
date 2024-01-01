@@ -138,6 +138,8 @@ h2::after {
 
 .header__img {
   margin-left: -10px;
+  -webkit-animation: rotateAnimation 5s 1;
+          animation: rotateAnimation 5s 1;
 }
 @media screen and (min-width: 700px) {
   .header__img {
@@ -153,6 +155,23 @@ h2::after {
   }
 }
 
+@-webkit-keyframes rotateAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 .header__nav {
   display: none;
 }
@@ -200,8 +219,8 @@ h2::after {
 .news_content-wrapper {
   -webkit-animation-name: newsAnim;
           animation-name: newsAnim;
-  -webkit-animation-duration: 0.9s;
-          animation-duration: 0.9s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-iteration-count: initial;
           animation-iteration-count: initial;
 }
