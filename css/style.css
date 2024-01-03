@@ -218,6 +218,36 @@ h2::after {
 
 .header__nav.shown {
   position: absolute;
+  left: -40px;
+  -webkit-animation-name: menuAnimation;
+          animation-name: menuAnimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes menuAnimation {
+  from {
+    left: 200px;
+  }
+  to {
+    left: -40px;
+  }
+}
+
+@keyframes menuAnimation {
+  from {
+    left: 200px;
+  }
+  to {
+    left: -40px;
+  }
+}
+.header__nav-button.shown-btn {
+  height: 70px;
+  width: 100vw;
+  border-radius: 0px;
+  justify-content: left;
+  padding-left: 60px;
 }
 
 .news_content-wrapper {
