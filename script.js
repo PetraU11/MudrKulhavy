@@ -17,5 +17,6 @@ hamburger.addEventListener("click", () => {
         hamburgerBtn.forEach((button) => {
             button.classList.add("shown-btn");
         });
+        
     }
 });
