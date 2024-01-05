@@ -1,4 +1,5 @@
 const hamburger = document.querySelector(".header__hbg-wrapper")
+const headerBottom = document.querySelector(".header__wrapper-bottom")
 const hamburgerMenu = document.querySelector(".header__nav")
 const hamburgerBtn = document.querySelectorAll(".header__nav-button")
 const hmbgBarTop = document.querySelector(".header__hbg.top")
@@ -16,6 +17,7 @@ hamburger.addEventListener("click", () => {
         hmbgBarTop.classList.remove("first")
         hmbgBarMiddle.classList.remove("second")
         hmbgBarBottom.classList.remove("third");
+        headerBottom.style.marginTop = "0px"
     } else {
         hamburgerMenu.style.display = "block";
         hamburgerMenu.classList.add("shown");
@@ -25,6 +27,7 @@ hamburger.addEventListener("click", () => {
         hmbgBarTop.classList.add("first")
         hmbgBarMiddle.classList.add("second")
         hmbgBarBottom.classList.add("third")
+        headerBottom.style.marginTop = "15px"
 
     } 
 });

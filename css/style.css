@@ -116,7 +116,6 @@ h2::after {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
 }
 
 .header__wrapper-nav {
@@ -218,11 +217,6 @@ h2::after {
 
 .header__nav-button:hover {
   background-color: #e0a611;
-}
-
-.header__nav-button:active {
-  background-color: #e0a611;
-  font-size: larger;
 }
 
 .header__nav.shown {
@@ -352,7 +346,7 @@ h2::after {
 }
 
 .news {
-  margin-top: 380px;
+  margin-top: 420px;
   text-align: center;
 }
 @media screen and (min-width: 1000px) {
