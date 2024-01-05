@@ -245,7 +245,7 @@ h2::after {
     left: -40px;
   }
 }
-.header__nav.hide {
+.header__nav.hidden {
   position: absolute;
   left: -40px;
   -webkit-animation-name: menuHideAnimation;
@@ -355,6 +355,7 @@ h2::after {
     border-right: #53B3CB solid 5px;
     padding-right: 10px;
     text-align: left;
+    margin-top: 380px;
   }
 }
 
@@ -474,4 +475,9 @@ h2::after {
   margin-top: 0px;
   background-color: #c1e1e2;
   padding: 8px;
+}
+
+.footer__author {
+  text-decoration: none;
+  color: #1C0221;
 }/*# sourceMappingURL=style.css.map */

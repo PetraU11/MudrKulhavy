@@ -242,11 +242,8 @@ max-width:500px;
 .header__nav.shown {
     position:absolute; 
     left: -40px;
-
     animation-name: menuShowAnimation;
     animation-duration:1s;
- 
-
 }
 
 @keyframes menuShowAnimation {
@@ -254,7 +251,7 @@ max-width:500px;
     to {left:-40px;}
   }
 
-.header__nav.hide{
+.header__nav.hidden{
     position:absolute; 
     left: -40px;
     animation-name: menuHideAnimation;
@@ -332,6 +329,7 @@ max-width:500px;
         border-right: $base-color solid 5px;
         padding-right: 10px;
         text-align:left;
+        margin-top: 380px; 
     }
    
 }
@@ -346,6 +344,7 @@ max-width:500px;
     margin:0 20px;
     display:block;
     font-size: 3rem;
+
 
 }
 
@@ -464,4 +463,9 @@ padding-left:10px;}
     margin-top:0px;
     background-color:#c1e1e2;
     padding: 8px;
+}
+
+.footer__author{
+text-decoration: none;
+color:$base-color-dark;
 }
